@@ -6,11 +6,15 @@ $(function() {
 	case 'Contact Us':
 		$('#contact').addClass('active');
 		break;
+	case 'All Products':
+		$('#allproducts').addClass('active');
+		break;
 	case 'Home':
-		$('#home').addClass('active');
+		$('#menu').addClass('active');
 		break;
 	default:
-		$('#home').addClass('active');
+		$('#allproducts').addClass('active');
+		$('#a_'+menu).addClass('active');
 		break;
 	}
 	});
